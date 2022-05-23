@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace ListInsertPerformance
 {
@@ -10,16 +12,26 @@ namespace ListInsertPerformance
             // читаем весь файл с рабочего стола в строку текста
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"TextFile1.txt");
             string text = File.ReadAllText(path);
-            //string text = File.ReadAllText(@"E:\C#\Skillfactory\Учеба C#\Проекты\13\cdev_Text.txt");
 
             // Сохраняем символы-разделители в массив
-            char[] delimiters = new char[] {'\r', '\n' };
+            char[] delimiters = new char[] {' ', '\r', '\n' };
 
             // разбиваем нашу строку текста, используя ранее перечисленные символы-разделители
             var words = text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
 
-            // выводим количество
-            Console.WriteLine(words.Length);
+            var list = new List<string>();
+
+            // Запустим таймер
+            var watchTwo = Stopwatch.StartNew();
+
+            // Добавляем все строки
+            foreach(var row in words)
+            {
+                list.Add(row);
+            }
+
+            // Выведем результат
+            Console.WriteLine($"Вставка в  List: {watchTwo.Elapsed.TotalMilliseconds}  мс");
 
             Console.ReadLine();
         }
