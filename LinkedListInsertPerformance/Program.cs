@@ -9,7 +9,7 @@ namespace LinkedListInsertPerformance
     {
         static void Main(string[] args)
         {
-            // читаем весь файл с рабочего стола в строку текста
+            // читаем весь файл в строку текста
             string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"TextFile1.txt");
             string text = File.ReadAllText(path);
 
