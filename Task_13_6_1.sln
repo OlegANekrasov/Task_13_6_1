@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListInsertPerformance", "LinkedListInsertPerformance\LinkedListInsertPerformance.csproj", "{19563C0F-7EC9-4BE8-BA78-F47475296F18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListInsertPerformance", "ListInsertPerformance\ListInsertPerformance.csproj", "{5DB86BFC-AE09-49D7-94C3-32FDC1623BE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19563C0F-7EC9-4BE8-BA78-F47475296F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19563C0F-7EC9-4BE8-BA78-F47475296F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19563C0F-7EC9-4BE8-BA78-F47475296F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19563C0F-7EC9-4BE8-BA78-F47475296F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB86BFC-AE09-49D7-94C3-32FDC1623BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB86BFC-AE09-49D7-94C3-32FDC1623BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB86BFC-AE09-49D7-94C3-32FDC1623BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB86BFC-AE09-49D7-94C3-32FDC1623BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {390D7C3C-FA98-4770-BD8D-F00623ABF4A5}
+	EndGlobalSection
+EndGlobal
