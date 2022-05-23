@@ -10,7 +10,7 @@ namespace LinkedListInsertPerformance
         static void Main(string[] args)
         {
             // читаем весь файл в строку текста
-            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"TextFile1.txt");
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TextFile1.txt");
             string text = File.ReadAllText(path);
 
             // Сохраняем символы-разделители в массив
