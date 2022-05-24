@@ -22,7 +22,7 @@ namespace ListInsertPerformance
             var list = new List<string>();
 
             // Запустим таймер
-            var watchTwo = Stopwatch.StartNew();
+            var watch = Stopwatch.StartNew();
 
             // Добавляем все строки
             foreach(var row in words)
@@ -31,7 +31,7 @@ namespace ListInsertPerformance
             }
 
             // Выведем результат
-            Console.WriteLine($"Вставка в  List: {watchTwo.Elapsed.TotalMilliseconds}  мс");
+            Console.WriteLine($"Вставка в  List: {watch.Elapsed.TotalMilliseconds}  мс");
 
             Console.ReadLine();
         }
